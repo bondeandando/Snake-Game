@@ -1,0 +1,87 @@
+<!doctype HTML>
+<link rel="icon" href="ico.ico">
+<body>
+
+<div id = "wrapper">
+
+<div id = "scores">
+<p class="score"><b>SCORE: <span id="score"></span></b></p>
+<p class=" hit ">HIT: <span id="hit"></span></p>
+<p class="highesthit">HIGHEST HIT: <span id="highesthit"></span></p>
+<p class="ranking"><b>RANKING: <span id="ranking"></span></b></p>
+<p class="highesthitranking">HIGHEST HIT: <span id="highesthitranking"></span></p>
+</div>
+
+<div id ="canvas">
+<canvas id="quadro" width=600 height=600>
+<img src ="graphics/fruits/fruit0.png" id="fruit0"/>
+<img src ="graphics/fruits/fruit1.png" id="fruit1"/>
+<img src ="graphics/fruits/fruit2.png" id="fruit2"/>
+<img src ="graphics/fruits/fruit3.png" id="fruit3"/>
+<img src ="graphics/fruits/fruit4.png" id="fruit4"/>
+<img src ="graphics/fruits/fruit5.png" id="fruit5"/>
+<img src ="graphics/fruits/fruit6.png" id="fruit6"/>
+<img src ="graphics/fruits/randomfruit0.png" id="randomfruit0"/>
+<img src ="graphics/fruits/randomfruit1.png" id="randomfruit1"/>
+<img src ="graphics/fruits/randomfruit2.png" id="randomfruit2"/>
+<img src ="graphics/fruits/randomfruit3.png" id="randomfruit3"/>
+<img src ="graphics/fruits/randomfruit4.png" id="randomfruit4"/>
+<img src ="graphics/fruits/randomfruit5.png" id="randomfruit5"/>
+<img src ="graphics/fruits/bluefruit.png" id="bluefruit"/>
+<img src ="graphics/fruits/purplefruit.png" id="purplefruit"/>
+<img src ="graphics/fruits/goldfruit.png" id="goldfruit"/>
+<img src ="graphics/fruits/whitefruit.png" id="whitefruit"/>
+<img src ="graphics/fruits/incvelfruit.png" id="incvelfruit"/>
+<img src ="graphics/fruits/decvelfruit.png" id="decvelfruit"/>
+<img src ="graphics/fruits/rottenfruit.png" id="rottenfruit"/>
+<img src ="graphics/snake/bodysnake.png" id="bodysnake"/>
+<img src ="graphics/snake/headsnakedown0.png" id="headsnakedown0"/>
+<img src ="graphics/snake/headsnakedown1.png" id="headsnakedown1"/>
+<img src ="graphics/snake/headsnakedown2.png" id="headsnakedown2"/>
+<img src ="graphics/snake/headsnakelefth0.png" id="headsnakelefth0"/>
+<img src ="graphics/snake/headsnakelefth1.png" id="headsnakelefth1"/>
+<img src ="graphics/snake/headsnakelefth2.png" id="headsnakelefth2"/>
+<img src ="graphics/snake/headsnakeright0.png" id="headsnakeright0"/>
+<img src ="graphics/snake/headsnakeright1.png" id="headsnakeright1"/>
+<img src ="graphics/snake/headsnakeright2.png" id="headsnakeright2"/>
+<img src ="graphics/snake/headsnakeup0.png" id="headsnakeup0"/>
+<img src ="graphics/snake/headsnakeup1.png" id="headsnakeup1"/>
+<img src ="graphics/snake/headsnakeup2.png" id="headsnakeup2"/>
+</canvas>
+</div>
+</div>
+
+<style>
+    #quadro {
+    	position: absolute;
+        border: 1px solid #000;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        background-color: black;
+    }
+    .score{
+        font-size: 24px;
+    }
+    .hit{
+        font-size: 16px;
+    }
+    .highesthit{
+        font-size: 16px;
+    }
+    .ranking{
+        font-size: 20px;
+    }
+    .highesthitranking{
+        font-size: 16px;
+    }
+    #wrapper{
+        width: 100%;
+        height: 100%;
+    }
+</style>
+
+</body>
+<script src="snake.js">
+</script>
+
